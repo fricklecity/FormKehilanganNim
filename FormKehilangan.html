@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Laporan Kehilangan KTM</title>
+    <link rel="stylesheet" href="Henlo.css">
+</head>
+<body>
+
+    <h1>Form Laporan Kehilangan KTM</h1>
+
+    <table border="1">
+        <caption><b>Form Laporan Kehilangan KTM</b></caption>
+
+        <tr>
+            <th>Nama Lengkap</th>
+            <td><input type="text" name="nama_lengkap" required autofocus></td>
+        </tr>
+
+        <tr>
+            <th>NIM</th>
+            <td><input type="number" name="NIM" id="NIM" placeholder="Silahkan Masukan NIM Anda" pattern="[0-9]{9}" required title="Harus diisi 9 angka"></td>
+        </tr>
+
+        <tr>
+            <th>Fakultas</th>
+            <td>
+                <select name="fakultas" required>
+                    <option value="">Pilih Fakultas</option>
+                    <option value="FKET">Fakultas Ketenagalistrikan dan Energi </option>
+                    <option value="FTEN">Fakultas Telematika Energi</option>
+                    <option value="FTBE">Fakultas Teknologi dan Bisnis Energi</option>
+                    <option value="FTIK">Fakultas Teknologi Insfrastruktur dan Kewilayahan</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Program Studi</th>
+            <td>
+                <select name="program_studi" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="TTL">Teknik Tenaga Listrik</option>
+                    <option value="elektro">Teknik Elektro</option>
+                    <option value="SE">Sistem Energi</option>
+                    <option value="informatika">Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="TM">Teknik Mesin</option>
+                    <option value="TI">Teknik Industri</option>
+                    <option value="KW"> Kewirausahaan</option>
+                    <option value="sipil">Teknik Sipil</option>
+                    <option value="GEO">Geografi</option>
+                    <option value="TL">Teknik Lingkungan</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Tahun Masuk</th>
+            <td>
+                <select name="tahun_masuk" required>
+                    <option value="">Pilih Tahun Masuk</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Jumlah Kehilangan KTM Sebelumnya</th>
+            <td><input type="number" name="jumlah_kehilangan" min="0" max="10" required></td>
+        </tr>
+
+        <tr>
+            <th>Tanggal Kehilangan</th>
+            <td><input type="date" name="tanggal_kehilangan" required></td>
+        </tr>
+
+        <tr>
+            <th>Tempat Kehilangan</th>
+            <td><input type="text" name="tempat_kehilangan" required></td>
+        </tr>
+
+        <tr>
+            <th>Deskripsi Kehilangan</th>
+            <td><textarea name="deskripsi_kehilangan" rows="4" required></textarea></td>
+        </tr>
+
+        <tr>
+            <th>Unggah Surat Kehilangan</th>
+            <td><input type="file" name="surat_kehilangan" required></td>
+        </tr>
+
+        <tr>
+            <th>Unggah Foto Diri</th>
+            <td><input type="file" name="foto_diri" required></td>
+        </tr>
+
+        <tr>
+            <th>Syarat & Ketentuan</th>
+            <td>
+                <input type="checkbox" name="syarat_ketentuan" required> Saya setuju dengan syarat dan ketentuan
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Kirim Laporan Kehilangan</button>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
