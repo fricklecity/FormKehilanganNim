@@ -1,17 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: gray;
+
 }
 
 h1 {
     text-align: center;
+    color: #333; /* Darker heading color for contrast */
 }
 
 table {
     border-collapse: collapse;
     width: 80%;
-    margin:   
-0 auto;
+    margin: 0 auto;
+    border: 1px solid #ccc; /* Add a border to the table for clarity */
 }
 
 th, td {
@@ -20,8 +23,13 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
+td {
+    text-align: center; /* Center the text within each table cell */
+}
+
 th {
     background-color: #f2f2f2;
+    font-weight: bold; /* Make the table header text bold for emphasis */
 }
 
 input[type="text"],
@@ -32,13 +40,14 @@ select {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #ccc;   
+    border: 2px solid #ccc;
     border-radius: 4px;
+    font-size: 14px; /* Adjust font size for better readability */
 }
 
-input[type="file"]   
-{
+input[type="file"] {
     padding: 10px;
+    font-size: 14px; /* Adjust font size for better readability */
 }
 
 button[type="submit"] {
@@ -50,9 +59,9 @@ button[type="submit"] {
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    font-size: 16px; /* Adjust font size for better button appearance */
 }
 
 button[type="submit"]:hover {
-    background-color:   
-#3e8e41;
+    background-color: #3e8e41;
 }
